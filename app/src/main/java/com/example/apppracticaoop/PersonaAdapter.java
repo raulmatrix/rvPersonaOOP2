@@ -9,14 +9,15 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class PersonaAdapter extends RecyclerView.Adapter<PersonaAdapter.VH> {
 
-    private List<Persona> data;
+    private ArrayList<Persona> data;
 
     // Constructor solo con la lista
-    public PersonaAdapter(List<Persona> data) {
+    public PersonaAdapter(ArrayList<Persona> data) {
         this.data = data;
     }
 
