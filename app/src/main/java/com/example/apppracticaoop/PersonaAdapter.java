@@ -32,14 +32,14 @@ public class PersonaAdapter extends RecyclerView.Adapter<PersonaAdapter.VH> {
 
     @Override
     public void onBindViewHolder(@NonNull VH holder, int position) {
-        // Obtenemos el objeto Persona en la posición actual
+
         final Persona p = data.get(position); // 'final' para poder usar dentro del OnClick
 
         // Asignamos datos a los TextViews
         holder.tvNombre.setText(p.getNombre());
         holder.tvDetalle.setText(p.getEdad() + " años • " + p.getCiudad());
 
-        // Manejo del click directamente en el Adapter (versión sin lambda)
+
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
